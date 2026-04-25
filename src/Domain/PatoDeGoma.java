@@ -1,19 +1,12 @@
 package Domain;
 
-public class PatoDeGoma extends Pato implements Cuaqueable, Volable{
-
+public class PatoDeGoma extends Pato{
+    public PatoDeGoma(){
+        volable = new NoVuela();
+        cuaqueable = new Chirreo();
+    }
      @Override
     public void mostrar(){
         System.out.println("Yo soy un Patito de Goma");
     }  
-    
-    @Override
-    public void cuaquear(){
-        System.out.println("Chir Chir");
-     
-}
-     @Override
-    public void volar(){
-        System.out.println("INCAPAZ DE VOLAR");
-    }
 }
