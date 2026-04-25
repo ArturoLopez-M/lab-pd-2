@@ -1,36 +1,45 @@
 package MainPackage;
 
-import Domain.PatoCabezaRoja;
-import Domain.PatoDeGoma;
 import Domain.PatoReal;
+import Domain.PatoDeGoma;
 import Domain.PatoSenuelo;
+import Domain.PatoCabezaRoja;
 
 public class MainProject {
 
     public static void main(String[] args) {
-        PatoReal p1 = new PatoReal();
-        p1.mostrar();
-        p1.cuaquear();
-        p1.volar();
-        p1.nadar();
-        System.out.println("-------------------------");
-        PatoDeGoma p2 = new PatoDeGoma();
-        p2.mostrar();
-        p2.cuaquear();
-        p2.volar();
-        p2.nadar();
-        System.out.println("--------------------------");
-        PatoSenuelo p3 = new PatoSenuelo();
-        p3.mostrar();
-        p3.cuaquear();
-        p3.volar();
-        p3.nadar();
-        System.out.println("--------------------------");
-        PatoCabezaRoja p4 = new PatoCabezaRoja();
-        p4.mostrar();
-        p4.cuaquear();
-        p4.volar();
-        p4.nadar();
+        PatoReal        preal = new PatoReal();
+        PatoDeGoma      pgoma = new PatoDeGoma();
+        PatoSenuelo     psenu = new PatoSenuelo();
+        PatoCabezaRoja  proja = new PatoCabezaRoja();
+        
+    /////////////////PatoReal/////////////////    
+        preal.mostrar();
+        preal.RealizarCuaqueo();
+        preal.RealizarVuelo();
+        preal.nadar();
+        System.out.println();
+        
+    /////////////////PatoDeGoma/////////////////     
+        pgoma.mostrar();
+        pgoma.RealizarCuaqueo();
+        pgoma.RealizarVuelo();
+        pgoma.nadar();
+        System.out.println();
+        
+    /////////////////PatoSeñuelo/////////////////
+        psenu.mostrar();
+        psenu.RealizarCuaqueo();
+        psenu.RealizarVuelo();
+        psenu.nadar();
+        System.out.println();
+        
+    /////////////////PatoCabezaRoja////////////////
+        proja.mostrar();
+        proja.RealizarCuaqueo();
+        proja.RealizarVuelo();
+        proja.nadar();
+        System.out.println();
     }
 
 }
