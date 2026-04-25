@@ -6,7 +6,7 @@ public class PatoCabezaRoja extends Pato implements Volable,Cuaqueable{
     
     @Override
     public void mostrar(){
-        System.out.println("Yo soy un real PATO CABZA ROJA");
+        System.out.println("Yo soy un real PATO CABEZA ROJA");
     }
     
     @Override
@@ -16,7 +16,7 @@ public class PatoCabezaRoja extends Pato implements Volable,Cuaqueable{
     
     @Override
     public void cuaquear(){
-        System.out.println("Soy un verdadero pato por eso hago CUAC CUAC");
+        System.out.println("");
     
 }
     
